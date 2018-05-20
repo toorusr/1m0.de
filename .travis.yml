@@ -3,14 +3,15 @@ language: php
 php:
   - "7.2"
 before_install:
-  - git clone https://github.com/toorusr/1m0.de 1m0de
-  - cd 1m0de
+  - git clone https://github.com/toorusr/1m0.de | cd 1m0.de
   - sudo apt-get update; sudo apt-get install npm -y
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
+  - npm i tailwindcss --dev
+  - ./node_modules/.bin/tailwind build source/css/main.css -c ./tailwind.js -o source/css/styles.css
   - ./vendor/bin/jigsaw build production
-  - npm i -g netlify-cli
   - cp _redirects build_production/_redirects
+  - npm i -g netlify-cli
 cache:
   directories:
     - $HOME/.cache/yarn
