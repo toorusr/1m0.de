@@ -5,8 +5,9 @@ php:
 before_install:
   - git clone https://github.com/toorusr/1m0.de 1m0de
   - cd 1m0de
-  - sudo apt-get update; sudo apt-get install composer npm -y
-  - composer require jigsaw
+  - sudo apt-get update; sudo apt-get install npm -y
+  - php -r "readfile('https://getcomposer.org/installer');" | php
+  - php composer.phar install
   - ./vendor/bin/jigsaw build production
   - npm i -g netlify-cli
   - cp _redirects build_production/_redirects
