@@ -3,7 +3,8 @@ language: php
 php:
   - "7.2"
 before_install:
-  - git clone https://github.com/toorusr/1m0.de | cd 1m0.de
+  - git clone https://github.com/toorusr/1m0de
+  - cd 1m0de
   - sudo apt-get update; sudo apt-get install npm -y
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
