@@ -5,12 +5,10 @@ php:
 before_install:
   - git clone https://github.com/toorusr/1m0.de 1m0de
   - cd 1m0de
-  - sudo apt-get update; sudo apt-get install apt-utils gnupg2 -y
-  - curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
-  - sudo apt-get install -y nodejs
-  - php -r "readfile('https://getcomposer.org/installer');" | php
-  - php composer.phar install
-  - npm i -g yarn netlify-cli; yarn
+  - sudo apt-get update; sudo apt-get install composer npm -y
+  - composer require jigsaw
+  - ./vendor/bin/jigsaw build production
+  - npm i -g netlify-cli
   - cp _redirects build_production/_redirects
 cache:
   directories:
