@@ -2,7 +2,7 @@
 
 @section('body')
     <section class="parallax min-h-screen"></section>
-    <div id=content class="border-t-8 border-b-8 border-red-light">
+    <div id=content class="border-t-8 border-red-light">
         <br>
         <h1 class="text-center p20">Attention</h1>
         <p class="text-center text-grey">I am currently editing this article, please try again later.</p>
