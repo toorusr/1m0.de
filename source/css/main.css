@@ -1,3 +1,7 @@
 @tailwind preflight;
 @tailwind components;
 @tailwind utilities;
+
+.parallax {
+    background: url(/img/bg/toorusr.png) 50% 0 repeat fixed;
+}
