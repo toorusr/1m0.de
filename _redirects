@@ -1,2 +1,4 @@
 # redirects
-/about*       /aboutme
+/about*     /aboutme
+/prj          /projects
+/blg          /blog
