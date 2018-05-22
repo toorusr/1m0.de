@@ -1,7 +1,7 @@
 @extends('_layouts.master')
 
 @section('body')
-    <section class="parallax sm:h-40 min-h-screen"></section>
+    @include('_partials.parallax')
     <div class="flex justify-center border-t border-black-light">
         <div>
             @component('_components/prevcard')
