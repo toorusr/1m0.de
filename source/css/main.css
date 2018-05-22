@@ -3,5 +3,13 @@
 @tailwind utilities;
 
 .parallax {
-    background: url(/img/bg/toorusr.png) 50% 0 repeat fixed;
+    background-image: url(/img/bg/toorusr@1m0.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+@media (max-width: 576px) {
+    .parallax {
+        background-size: 100%;
+    }
 }
