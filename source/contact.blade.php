@@ -3,7 +3,7 @@
 @section('body')
     @include('_partials.parallax')
     <div class="flex items-center">
-    <form class="w-full max-w-xs" method="POST" name="contact" netlify>
+    <form class="w-full max-w-xs" method="POST" name="contact" action="/contact/success.html" netlify>
         <div class="md:flex md:items-center mb-6">
             <div class="md:w-1/3">
                 <label class="block text-grey font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
