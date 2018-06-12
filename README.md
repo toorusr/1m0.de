@@ -18,5 +18,3 @@ All other directories are MIT-licensed and can therefore be used completely free
 For more infos look up the [LICENSE](https://github.com/toorusr/1m0.de/tree/master/LICENSE) file.
 
 *A note about this repository would still be appreciated.*
-
-# License
