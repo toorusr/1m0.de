@@ -1,0 +1,31 @@
+backend:
+  name: git-gateway
+  branch: master 
+
+publish_mode: editorial_workflow
+media_folder: "source/img/uploads"
+public_folder: "/img/uploads"
+
+collections:
+  # - name: "blog" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Blog" # Used in the UI
+  #   folder: "_posts/blog" # The path to the folder where the documents are stored
+  #   create: true # Allow users to create new documents in this collection
+  #   slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   fields: # The fields for each document, usually in front matter
+  #     - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Featured Image", name: "thumbnail", widget: "image"}
+  #     - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  - name: "aboutme" # Used in routes, e.g., /admin/collections/blog
+    label: "Aboutme" # Used in the UI
+    folder: "source/_aboutme" # The path to the folder where the documents are stored
+    create: false # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "aboutme"}
+      - {label: "Last change", name: "last_change", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
