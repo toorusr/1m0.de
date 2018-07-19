@@ -9,7 +9,7 @@
         <br>
     	@foreach($aboutme as $about)
     	<p class="text-center text-grey">Last Change: {{ $about->last_change }}</p>
-    	<section>{{ $about->getContent() }}</section>
+    	<section>{!! $about->getContent() !!}</section>
     	@endforeach
         <br>
     </div>
