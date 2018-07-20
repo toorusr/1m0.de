@@ -1,6 +1,6 @@
 <section class="flex justify-center">
 <div class="max-w-xl rounded overflow-hidden shadow-lg my-8">
-    <img class="w-full h-auto" src="http://labor.mxzl.de/data/img/me.png" alt="Me">
+    <img class="w-full h-auto" src="{{$imgsrc}}" alt="{{$imgalt}}">
   <div class="px-8 py-8">
     <div class="font-bold text-xl mb-2">{{$title}}</div>
     <section class="flex text-grey-darker text-base">
