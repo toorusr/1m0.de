@@ -1,4 +1,5 @@
 # redirects
-/about*     /aboutme
-/prj          /projects
-/blg          /blog
+/about*     /aboutme#content
+/abt     /aboutme#content
+/prj          /projects#content
+/blg          /blog#content
