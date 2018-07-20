@@ -8,6 +8,8 @@
             @slot('title') About me @endslot
             @slot('body') {{ $about->getContent() }} @endslot
             @slot('last') {{ $about->last_change }} @endslot
+            @slot('imgsrc') https://1m0.de/data/img/pic/me.png @endslot
+            @slot('imgalt') me. @endslot
         @endcomponent
         @endforeach
     </div>
