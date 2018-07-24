@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get install npm -y
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
-  - npm i
+  - npm i tailwindcss --dev
   - ./node_modules/.bin/tailwind build source/css/main.css -c ./tailwind.js -o source/css/styles.css
   - ./vendor/bin/jigsaw build production
   - cp _redirects build_production/_redirects
@@ -19,4 +19,4 @@ cache:
     - node_modules
 
 script:
-        - ./netlifyctl -A $NETLIFY_TOKEN deploy -s "1m0de.netlify.com" -P "build_production"
+  - ./netlifyctl -A $NETLIFY_TOKEN deploy -s "1m0de.netlify.com" -P "build_production"
