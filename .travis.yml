@@ -5,18 +5,18 @@ php:
 before_install:
   - git clone https://github.com/toorusr/1m0.de 1m0de
   - cd 1m0de
-  - sudo apt-get update; sudo apt-get install npm -y
+  - sudo apt-get install npm -y
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
-  - npm i tailwindcss --dev
+  - npm i
   - ./node_modules/.bin/tailwind build source/css/main.css -c ./tailwind.js -o source/css/styles.css
   - ./vendor/bin/jigsaw build production
   - cp _redirects build_production/_redirects
-  - npm i -g netlify-cli
+  - wget -qO- 'https://cli.netlify.com/download/latest/linux' | tar xz
 cache:
   directories:
-    - $HOME/.cache/yarn
     - $HOME/.composer/cache/files
+    - node_modules
 
 script:
-- netlify -t $NETLIFY_TOKEN deploy --site-id 1m0de -p build_production
+        - ./netlifyctl -A $NETLIFY_TOKEN deploy -s "1m0de.netlify.com" -P "build_production"
