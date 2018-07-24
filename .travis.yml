@@ -8,7 +8,7 @@ before_install:
   - sudo apt-get install npm -y
   - php -r "readfile('https://getcomposer.org/installer');" | php
   - php composer.phar install
-  - npm i tailwindcss --dev
+  - npm i tailwindcss --save-dev
   - ./node_modules/.bin/tailwind build source/css/main.css -c ./tailwind.js -o source/css/styles.css
   - ./vendor/bin/jigsaw build production
   - cp _redirects build_production/_redirects
