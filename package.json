@@ -1,0 +1,21 @@
+{
+  "name": "1m0.de",
+  "version": "1.0.0",
+  "description": "1m0 Website",
+  "devDependencies": {
+    "tailwindcss": "^0.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toorusr/1m0.de.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toorusr/1m0.de/issues"
+  },
+  "homepage": "https://github.com/toorusr/1m0.de#readme"
+}
