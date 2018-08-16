@@ -6,6 +6,7 @@
             <h2 class="mb-2 font-black">{{$header}}</h2>
             <p class="mb-4 text-grey-dark text-sm">{{$text}}</p>
             <a href="{{$link or ''}}"><button class="px-6 py-3 bg-{{$buttonclr}} hover:bg-{{$buttonclr}}-light text-white font-bold rounded-full mt-1 mb-2" onclick="">{{$button}}</button></a>
+            <a href="{{$link2 or ''}}"><button class="px-6 py-3 bg-{{$buttonclr2}} hover:bg-{{$buttonclr2}}-light text-white font-bold rounded-full mt-1 mb-2" onclick="">{{$button2}}</button></a>
         </div>
     </div>
 </section>

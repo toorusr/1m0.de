@@ -11,6 +11,7 @@
                 @slot('button') Who are you? @endslot
                 @slot('buttonclr') blue @endslot
                 @slot('link') /aboutme#content @endslot
+                @slot('buttonsec')1@endslot
             @endcomponent
             @component('_components/prevcard')
                 @slot('img') https://1m0.de/data/img/pic/idea-min.jpg @endslot
